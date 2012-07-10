@@ -1,0 +1,42 @@
+\hypertarget{interface_second_view_controller}{\section{Second\-View\-Controller Class Reference}
+\label{interface_second_view_controller}\index{Second\-View\-Controller@{Second\-View\-Controller}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_second_view_controller_abd2ceb34046e497cc15743c448168ed4}{add\-View\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_second_view_controller_a0d9b10e294fd64ea3e4ec0ba4a7b6ca2}{remove\-View\-:}
+\item 
+\hypertarget{interface_second_view_controller_a3f0aeb78d9f8aeadbaa36fdbe503e3d6}{(B\-O\-O\-L) -\/ {\bfseries should\-Autorotate\-To\-Interface\-Orientation\-:}{\ttfamily  \mbox{[}implementation\mbox{]}}}\label{interface_second_view_controller_a3f0aeb78d9f8aeadbaa36fdbe503e3d6}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_second_view_controller_a838b60d049d6f56622b07464371f32a3}{N\-S\-Mutable\-Array $\ast$ {\bfseries avcs}}\label{interface_second_view_controller_a838b60d049d6f56622b07464371f32a3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_second_view_controller_abd2ceb34046e497cc15743c448168ed4}{\index{Second\-View\-Controller@{Second\-View\-Controller}!add\-View\-:@{add\-View\-:}}
+\index{add\-View\-:@{add\-View\-:}!SecondViewController@{Second\-View\-Controller}}
+\subsubsection[{add\-View\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) add\-View\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_second_view_controller_abd2ceb34046e497cc15743c448168ed4}
+This method adds another view to the Tab\-Bar\-Controller. First we make sure our internal array is created, then create the new V\-C from the storyboard. Next we set the main label to the correct value and add the new View\-Controller to the Tab\-Bar\-Controller and allow moving the tabs. \hypertarget{interface_second_view_controller_a0d9b10e294fd64ea3e4ec0ba4a7b6ca2}{\index{Second\-View\-Controller@{Second\-View\-Controller}!remove\-View\-:@{remove\-View\-:}}
+\index{remove\-View\-:@{remove\-View\-:}!SecondViewController@{Second\-View\-Controller}}
+\subsubsection[{remove\-View\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) remove\-View\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_second_view_controller_a0d9b10e294fd64ea3e4ec0ba4a7b6ca2}
+This method removes the last View\-Contoller from the Tab\-Bar\-Controller. This is done by getting the last object from the internal array then removing it from both arrays. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Volumes/\-Shared/\-X81 i\-O\-S/30 Tab\-Bar\-Contoller/\-Tab\-Bar\-Contoller/Second\-View\-Controller.\-h\item 
+/\-Volumes/\-Shared/\-X81 i\-O\-S/30 Tab\-Bar\-Contoller/\-Tab\-Bar\-Contoller/Second\-View\-Controller.\-m\end{DoxyCompactItemize}
