@@ -22,11 +22,19 @@
 
 @implementation FirstViewController
 
+#pragma mark - Property Syntheses
 @synthesize isRandom = _isRandom;
 @synthesize fst = _fst;
 @synthesize sec = _sec;
 
+#pragma mark - Methods
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{   
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+#pragma mark UIEvent Methods
 /** This method randomly re-orders the TabBarController's ViewControllers.
     This is done my first storing the first 2 ViewControllers so that we can bring them back
     to the front when we want. Then we get a mutable array of the ViewControllers and pick a
@@ -63,14 +71,4 @@
     self.isRandom = NO;
 }
 
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    self.fst = [[[self tabBarController] viewControllers] objectAtIndex:0];
-    self.sec = [[[self tabBarController] viewControllers] objectAtIndex:1];
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{   
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
 @end

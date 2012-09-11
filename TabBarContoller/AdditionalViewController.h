@@ -11,7 +11,8 @@
 @interface AdditionalViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *mainLabel;
-@property (copy  , nonatomic) NSString *labelText;
+@property (copy  , nonatomic) NSString *labelText; //String are usualy copied so that the string you recive
+                                                   // is never changed without the setter being called.
 
 -(void)updateInfo;
 - (IBAction)stepperChanged:(UIStepper*)sender;

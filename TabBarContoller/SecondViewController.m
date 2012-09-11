@@ -10,8 +10,17 @@
 
 @implementation SecondViewController
 
+#pragma mark - Property Syntheses
 @synthesize avcs = _avcs;
 
+#pragma mark - Methods
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+#pragma mark UIEvent Methods
 /** This method adds another view to the TabBarController.
     First we make sure our internal array is created, then 
     create the new VC from the storyboard. Next we set the 
@@ -52,8 +61,4 @@
     [[self tabBarController] setViewControllers:a animated:YES];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
 @end
